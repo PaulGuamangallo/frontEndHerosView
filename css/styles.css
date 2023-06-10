@@ -91,6 +91,14 @@ i.fas{
     font-size: 40px;
     color:rgba(204, 36, 36, 1);
 }
+i.fa-solid{
+    position: absolute;
+    top: 840px;
+    left: 92vw;
+    font-size: 3em;
+    color:rgba(0, 102, 159, 1);
+
+}
 
 img.imgFoo{
     width: 10%;  
