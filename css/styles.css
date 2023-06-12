@@ -18,8 +18,7 @@ p.txtPromo{
     color: rgba(51, 51, 51, 1);
 }
 h2.h2Hero{
-    padding:1%;
-    padding-top: 14%;
+    padding:2%;
     font-size: 38px;
     font-weight: lighter;
 }
@@ -44,8 +43,8 @@ section.heroe{
     text-align: center;
     box-shadow: 0 5px 0 rgba(0, 0, 0, 0.1);
     padding-bottom: 20px;
-    position: relative;
-    
+    position: relative;  
+    margin: 2%;  
 }
 
 img.fondo1{
@@ -53,10 +52,7 @@ img.fondo1{
     width: 100%;
 }
 
-img.pic{
-    position: absolute; 
-    top: 140px;
-    left: 100px;
+img.pic{ 
     border-radius:150px;
     width: 50%;
 }
@@ -92,12 +88,7 @@ i.fas{
     color:rgba(204, 36, 36, 1);
 }
 i.fa-solid{
-    position: absolute;
-    top: 840px;
-    left: 92vw;
-    font-size: 3em;
     color:rgba(0, 102, 159, 1);
-
 }
 
 img.imgFoo{
@@ -106,18 +97,47 @@ img.imgFoo{
     top: 25%;
     left: 88%;
 }
-@media(min-width: 1000px){
-    main{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-}
-@media(max-width: 1000px){
+@media(max-width: 768px){
     main{
         display: flex;
         flex-wrap: nowrap;
         flex-direction: column;
         align-items: center;
+    }
+    img.pic{
+        position: absolute;
+        left: 25%;
+        top: 20%;
+
+    }
+    h2.h2Hero{
+        padding-top: 30%;
+    }
+    i.fa-solid{
+        position: absolute;
+        top: 172vh;
+        left: 72vw;
+        font-size: 3em;
+    }
+}
+@media(min-width: 768px){
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    img.pic{
+        position: absolute;
+        left: 25%;
+        top: 30%;
+    }
+    h2.h2Hero{
+        padding-top: 25%;
+    }
+    i.fa-solid{
+        position: absolute;
+        top: 108vh;
+        left: 92vw;
+        font-size: 4em;
     }
 }
